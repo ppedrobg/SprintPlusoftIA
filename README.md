@@ -26,7 +26,7 @@ ultralytics: Biblioteca Python para treinamento de redes neurais profundas volta
 
 torch (PyTorch): Framework de aprendizado profundo que suporta treinamento e construção de modelos com uso de GPU.
 
-Utilização de Machine Learning / IA
+Implementação e Utilização de Machine Learning / IA
 
 Análise de Dados dos Clientes: Utilizamos o Roboflow para gerenciar e pré-processar os conjuntos de dados, permitindo uma análise precisa dos dados fornecidos pelos clientes. O OpenCV (cv2) ajuda a visualizar e entender os insights gerados, o que permite uma melhor segmentação de preferências e uma abordagem de vendas personalizada.
 
