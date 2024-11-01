@@ -1,37 +1,54 @@
 # ChallengePlusoft
 
-O projeto foi atualizado para aprimorar a experiência dos usuários ao experimentarem virtualmente as roupas de sua escolha. Inicialmente, realizamos um processo de anotação no Roboflow, onde categorizamos as roupas em classes como "camisa" e "calça", detectando tanto as partes superiores quanto inferiores. Agora, devido ao crescente mercado de e-commerce, implementamos um novo treinamento no nosso algoritmo de IA que não apenas identifica as roupas, mas também oferece a visualização dessas peças tanto de frente quanto de costas. O algoritmo foi otimizado para atender a diversos perfis de usuários, incluindo adultos, crianças, pessoas magras e de tamanhos plus size.
+**Autocritica e reflexão** 
 
-A arquitetura foi selecionada pelo seu potencial de desenvolvimento e maneira eficaz e proficiente de ser trabalhada, trazendo resultados fáceis de visualização, para que seja compreendido o que foi desenvolvido e pensado dentro do Roboflow.
+Durante o desenvolvimento, enfrentamos alguns desafios, como a incompatibilidade de certas imagens para o treinamento, o que tornou o processo repetitivo em alguns momentos. Além disso, a documentação do YOLOv8 se concentrou principalmente nas configurações visuais, e sentimos falta de mais orientações para análises avançadas dos dados. Sentimos que seria necessário para as etapas, algo mais sofisticado, pois seria de grande bom gosto conseguir expandir a forma em que pensamos no programa e como iria ser transmitida essa proposta para a forma real que foi concretizada a solução final. 
 
-Na interface principal, os usuários podem visualizar claramente as imagens das roupas processadas em tempo real. Quando o algoritmo de detecção de objetos entra em ação, ele destaca as áreas identificadas, como frente e costas das camisas e calças, facilitando a visualização dos resultados. Além disso, incluímos métricas de desempenho como precisão, recall e F1-score, fornecendo feedback imediato e confiável sobre a eficácia do algoritmo, que obteve uma margem de 85% de assertividade. As etapas foram divididas em partes de treino, teste e validação, sendo 70% para treino, 20% para teste e 10% para validação.
+Por passar e se desenvolver, sentimos que ficou limitado a forma de resolução e gostaríamos de ter efetivado algo mais real, conseguindo integrar a outros serviços que para o desenvolvimento e com a integração poderia se tornar algo até mais interessante de certa forma. 
 
-O sistema está preparado para processar dados fornecidos pelos clientes, o que possibilita a adaptação rápida e a diferenciação das peças de roupa de maneira eficiente, oferecendo visualizações otimizadas de frente e de costas. Isso economiza tempo e trabalho, além de garantir uma experiência personalizada que atende às necessidades específicas de cada cliente.
+Mas nos sentimos realizados como a forma que foi discorrida com o passar do tempo, com muito prestígio e trabalho em equipe, nosso time conseguiu finalizar algo que se compare e que segue uma linha de um grande futuro. 
 
-Em resumo, nossa interface simplificada no Colab permite que os usuários utilizem o sistema de detecção de roupas de maneira fácil e eficaz, adaptando-se às demandas do mercado. Agora, além de identificar as peças de roupa, o sistema também proporciona uma visualização detalhada dos itens tanto de frente quanto de costas, permitindo que os clientes se imaginem experimentando a roupa selecionada, oferecendo uma experiência mais completa.
+Ademais, sem dificuldades não seria possível chegar aonde chegamos e com desafios que conseguimos solucionar, sentimos um grande prazer por ter passado em todas essas fases. 
 
-Etapa Atual
+**Desenvolvimento do projeto**   
 
-A etapa atual do projeto foca na implementação da detecção de imagens para servir plataformas de e-commerce que queiram incorporar provadores digitais em seus sistemas. Com a detecção aprimorada, a plataforma usará dados como histórico de compras, preferências de estilo e informações demográficas para oferecer sugestões personalizadas de roupas, aumentando as chances de conversão, já que os clientes poderão visualizar as peças vestidas em si mesmos, tanto de frente quanto de costas, trazendo o mundo real para dentro da performance de seu site.
+O projeto foi desenvolvido com o uso do Roboflow para anotar e processar imagens, visando a criação de um provador digital, uma inovação que acreditamos poder beneficiar significativamente o mercado de moda. Nossa equipe identificou a oportunidade de aprimorar a experiência de compra de roupas online, permitindo que os clientes "experimentem" as peças virtualmente. A proposta foi conduzida com o objetivo de criar um sistema eficiente, de fácil uso e personalizável.  
 
-Ferramentas e Recursos Utilizados
+O processo inicial envolveu a coleta de um vasto conjunto de dados visuais, baixando mais de 300 imagens de diversas fontes. Optamos pelo Roboflow devido à sua interface intuitiva, que facilitou o upload das imagens e o processo de anotação. Embora a marcação individual de cada imagem e a criação de suas respectivas classes tenham sido demoradas, o Roboflow otimizou etapas cruciais, como a separação das imagens em conjuntos de treino, teste e validação, para o treinamento do nosso modelo.  
 
-Roboflow: Plataforma para gerenciamento e pré-processamento de dados de imagens.
+Após a preparação do dataset, desenvolvemos um código para consumir a API do Roboflow e carregar as imagens anotadas de maneira organizada. Isso permitiu que nosso algoritmo processasse os dados e passasse por diversas etapas de aprendizado. Utilizando métricas como F1-score, precisão e recall, avaliamos e monitoramos a eficácia do modelo, obtendo feedback constante sobre o desempenho e ajustes necessários.  
 
-cv2 (OpenCV): Biblioteca para processamento de imagens e visão computacional.
+**Principais Ferramentas e Recursos**  
 
-google.colab.patches: Módulo específico para integração com OpenCV no Google Colab.
+Utilizamos uma série de ferramentas especializadas para garantir a qualidade e o desempenho do modelo, incluindo:  
 
-ultralytics: Biblioteca Python para treinamento de redes neurais profundas voltadas para detecção de objetos e classificação de imagens.
+Roboflow: Para o gerenciamento e pré-processamento dos dados de imagem.  
 
-torch (PyTorch): Framework de aprendizado profundo que suporta treinamento e construção de modelos com uso de GPU.
+OpenCV (cv2): Uma biblioteca robusta para processamento de imagem e visão computacional.  
 
-Implementação e Utilização de Machine Learning / IA
+Google Colab Patches: Para integração prática com OpenCV dentro do ambiente Google Colab.  
 
-Análise de Dados dos Clientes: Utilizamos o Roboflow para gerenciar e pré-processar os conjuntos de dados, permitindo uma análise precisa dos dados fornecidos pelos clientes. O OpenCV (cv2) ajuda a visualizar e entender os insights gerados, o que permite uma melhor segmentação de preferências e uma abordagem de vendas personalizada.
+Ultralytics (YOLOv8): Um modelo avançado para detecção de objetos e classificação de imagens.  
 
-Modelo Preditivo: Utilizando a biblioteca Ultralytics, desenvolvemos um modelo preditivo capaz de relizar o processo onde o algoritimo foi treinado para reconhecer quando estiver de frente e costas e analisar as peças de roupas separadas pelas classes de camisa e calça. Treinado e avaliado com o PyTorch, o modelo é capaz de antecipar as necessidades dos usuários e sugerir produtos adequados assim que selecionar uma roupa que se enquadre em seu estilo e possibilitado ao provador digital que ira diferenciar quando o cliente queira experimentar a peça selecionada tanto de frente quanto de costas.
+PyTorch (torch): Framework de aprendizado profundo, permitindo treinamento e construção de modelos com uso de GPU.  
 
+**Resultados e Propostas de Expansão**  
+
+Ao final, estruturamos o código por sessões para um entendimento mais claro de cada etapa do projeto, como anotação, treinamento e validação dos dados. O sistema está agora preparado para processar peças de roupas de clientes que desejam usar a tecnologia do provador virtual. Com isso, o modelo se adapta rapidamente e diferencia de forma eficaz cada peça, oferecendo visualizações otimizadas de frente e verso. Isso não apenas economiza tempo e trabalho, mas também proporciona uma experiência personalizada, atendendo às necessidades específicas de clientes com e-commerces e lojas físicas que visam expandir para o mercado digital.  
+
+Para aprimorar o projeto, sugerimos as seguintes adições:  
+
+Aprimorar a Interface de Anotação: Poderíamos adicionar uma etapa intermediária para agrupar e rotular automaticamente as imagens, reduzindo o esforço de marcação manual.  
+
+Integração com Modelos de Realidade Aumentada (AR): A incorporação de uma camada de realidade aumentada para permitir que o usuário visualize as roupas em modelos 3D aumentaria ainda mais o valor da aplicação.  
+
+Feedback em Tempo Real: A adição de um sistema de feedback visual durante a detecção, para que os usuários vejam os pontos de ajuste, como posição e escala das roupas, diretamente na interface.  
+
+Automação de Ajuste de Tamanhos: Um recurso para ajustar automaticamente o tamanho das peças com base no tipo de corpo, aprimorando a personalização.  
+
+Essas adições poderiam elevar ainda mais a proposta, oferecendo uma experiência de provador virtual dinâmica e envolvente, além de simplificar o processo de desenvolvimento. 
+
+E levar adiante as técnicas usadas, com mais maturidade e entendimento sobre todas as etapas concluidas 
 Sistema de Recomendação Personalizada: O sistema de recomendação será alimentado por algoritmos de IA generativa para analisar padrões de comportamento. Através do treinamento e avaliação contínuos, o sistema recomendará roupas adequadas para cada cliente, assim facilitando e auemntando a chance do cliente efetuar a compra sem passar por insegurança de não saber como a peça de roupa irá se enquadrar em seu fisico.
 
 Essas atualizações no projeto garantem uma experiência de compra online mais interativa, personalizada e eficiente, permitindo que os usuários se imaginem com as roupas que escolheram de diferentes ângulos.
