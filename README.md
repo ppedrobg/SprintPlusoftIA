@@ -1,6 +1,6 @@
 # ChallengePlusoft
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-#Autocrítica e Reflexão
+# Autocrítica e Reflexão
 
 Durante o desenvolvimento, enfrentamos alguns desafios, como a incompatibilidade de certas imagens para o treinamento, o que tornou o processo repetitivo em alguns momentos. Além disso, a documentação do YOLOv8 se concentrou principalmente nas configurações visuais, e sentimos falta de mais orientações para análises avançadas dos dados. Sentimos que seria necessário para as etapas, algo mais sofisticado, pois seria de grande bom gosto conseguir expandir a forma em que pensamos no programa e como iria ser transmitida essa proposta para a forma real que foi concretizada a solução final.
 
