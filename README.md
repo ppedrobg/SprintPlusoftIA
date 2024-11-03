@@ -1,4 +1,4 @@
-#ChallengePlusoft
+# ChallengePlusoft
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 #Autocrítica e Reflexão
 
@@ -11,7 +11,7 @@ Mas nos sentimos realizados como a forma que foi discorrida com o passar do temp
 Ademais, sem dificuldades não seria possível chegar aonde chegamos e com desafios que conseguimos solucionar, sentimos um grande prazer por ter passado em todas essas fases.
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-#Desenvolvimento do Projeto
+# Desenvolvimento do Projeto
 
 O projeto foi desenvolvido com o uso do Roboflow para anotar e processar imagens, visando a criação de um provador digital, uma inovação que acreditamos poder beneficiar significativamente o mercado de moda. Nossa equipe identificou a oportunidade de aprimorar a experiência de compra de roupas online, permitindo que os clientes "experimentem" as peças virtualmente. A proposta foi conduzida com o objetivo de criar um sistema eficiente, de fácil uso e personalizável.
 
@@ -21,11 +21,13 @@ Após a preparação do dataset, desenvolvemos um código para consumir a API do
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-#Principais Ferramentas e Recursos
+# Principais Ferramentas e Recursos
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Utilizamos uma série de ferramentas especializadas para garantir a qualidade e o desempenho do modelo, incluindo:
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 Roboflow: Para o gerenciamento e pré-processamento dos dados de imagem.
 OpenCV (cv2): Uma biblioteca robusta para processamento de imagem e visão computacional.
 Google Colab Patches: Para integração prática com OpenCV dentro do ambiente Google Colab.
@@ -35,7 +37,7 @@ Resultados e Propostas de Expansão
 Ao final, estruturamos o código por sessões para um entendimento mais claro de cada etapa do projeto, como anotação, treinamento e validação dos dados. O sistema está agora preparado para processar peças de roupas de clientes que desejam usar a tecnologia do provador virtual. Com isso, o modelo se adapta rapidamente e diferencia de forma eficaz cada peça, oferecendo visualizações otimizadas de frente e verso. Isso não apenas economiza tempo e trabalho, mas também proporciona uma experiência personalizada, atendendo às necessidades específicas de clientes com e-commerces e lojas físicas que visam expandir para o mercado digital.
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-#Para aprimorar o projeto, sugerimos as seguintes adições:
+# Para aprimorar o projeto, sugerimos as seguintes adições:
 
 Aprimorar a Interface de Anotação: Poderíamos adicionar uma etapa intermediária para agrupar e rotular automaticamente as imagens, reduzindo o esforço de marcação manual.
 Integração com Modelos de Realidade Aumentada (AR): A incorporação de uma camada de realidade aumentada para permitir que o usuário visualize as roupas em modelos 3D aumentaria ainda mais o valor da aplicação.
